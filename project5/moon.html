@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portifolio</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="med.css">
+    
+</head>
+<body>
+    <!--First-->
+    <nav id="desktop-nav">
+        <div class="logo" > maymonah fifi</div>
+            <div class="nav-links">       
+                <a href="./assets/Cvmoon.pdf" onclick="toggleMenu()">about me </a> 
+                <a href="Experience.html"onclick="toggleMenu()" >Experience</a>
+                <a href="works.html"onclick="toggleMenu()" >volunteer works</a>
+                <a href="contact.html" onclick="toggleMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav id="hamburger-nav">
+        <div class="logo" > maymonah fifi</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">  
+                <a href="./assets/Cvmoon.pdf" onclick="toggleMenu()">about me </a> 
+                <a href="Experience.html"onclick="toggleMenu()" >Experience</a>
+                <a href="works.html"onclick="toggleMenu()" >volunteer works</a>
+                <a href="contact.html" onclick="toggleMenu()">Contact</a>
+                </div>
+            </div>
+    </nav>   
+    <!--section prorile-->
+    <section id="profile">
+    <div class="section__pic-container">
+        <img src="assets/jeen.png" alt="maymonah fifi" />
+    </div>
+	<div class="title">
+		<p class="Hello">Hello, I'm</p>
+        <h1 class="name">maymonah fifi</h1>
+        <button id="my-cv" onclick= "window.open ('./assets/Cvmoon.pdf') ">
+          my CV
+        </button>
+    </div>
+    <div>
+        <p class="p1">I strive to be an effective member in assisting organizations <br>in achieving their goals and developing my practical skills and contributing to<br> the service of the community and providing the best services,<br> aimed at the personal, community, institutional and state development </p>
+    </div>
+    <script src="script.js"></script> 
+    
+</body>
+</html>

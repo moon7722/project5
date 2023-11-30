@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+* {
+ margin: 2;
+ padding: 2;
+
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+p{
+ color:  rgb(59,52, 48);
+}
+
+/*Desktop Nav*/
+
+nav, .nav-links {
+    display: flex; 
+}
+
+nav{
+    justify-content: space-around; 
+    align-items: center;
+    height: 17vh ;
+    background-color:  rgb(59, 52, 48);
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 2rem;
+}
+
+a{
+    color:rgb(232, 211, 198);
+    text-decoration: none;
+    text-decoration-color:rgb(248, 247, 247) ;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: rgb(181, 181,181);
+    text-underline-offset: 1rem ; 
+}
+
+.logo {
+    font-size: 3rem;
+    color:rgb(232, 211, 198);
+    font-weight: bold;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+/*Hamburger Menu*/
+
+#hamburger-nav{ 
+    display: none; 
+}
+
+.hamburger-menu{
+     position: relative; 
+      display: inline-block; 
+    }
+
+.hamburger-icon{
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer; 
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color:rgb(232, 211, 198); 
+    transition: all 0.3 ease-in-out; 
+  }
+
+  .menu-links {
+   position: absolute; 
+    top: 100%;
+    right: 0;
+    background-color: rgb(232, 211, 198);
+    width: fit-content; 
+    max-height: 0;
+    overflow: hidden;  
+    transition: all 0.3 ease-in-out;
+  }
+
+  .menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;  
+    transition: all 0.3 ease-in-out;
+  }
+  
+  .menu-links li {
+    list-style: none; 
+  }
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem; 
+    height: 80vh;
+  }
+.title {
+    padding-top: 8rem;
+  }
+  
+  .section__pic-container {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin: auto 0;
+    margin-left: 2rem;
+
+  }
+  
+  .Hello {
+    align-self: center; 
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(150, 141, 149);
+  }
+
+  #my-cv {
+    background: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    gap: 1rem;
+    color: rgb(232, 211, 198);
+	background-color: rgb(59, 52, 48);
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 600;
+	padding: 1em 2em;
+	letter-spacing: 2px;
+	transition: 0.7s ease;
+
+  }
+  
+  #my-cv:hover {
+    border: rgb(148, 147, 148) 0.3rem solid;
+  }
+
+  .p1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-top: 9rem;
+    color: rgb(150, 141, 149);
+  }
+  
+  .name {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+
+/* experience*/
+#skills ,h2{
+    text-align: center;
+    font-size: 40px;
+    color:  rgb(59, 52, 48);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+h2{
+  text-align: left;
+  margin-left: 3rem;
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+#skills,hr{
+    width: 100px;
+    border: none;
+    align-items: center;
+}
+#skills .app img{
+    max-width: 60px;
+    margin-top: 1rem;
+}
+
+#skills ,.skill-con {
+    margin-top: 1rem;
+    align-items: center; 
+    margin-left:17rem;
+}
+
+#skills , .skill-con ,.app {
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+}
+
+#skills , .skill-con ,.app , .tem{
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 6oo;
+    margin-top: 0;
+    margin-right: 4rem;
+}
+
+.exp{
+  height: 80rem;
+  width: 900px;
+  background-color: rgb(192, 184, 182);
+  align-items: center;
+  text-align: center;
+  margin-right: 90px;
+  border-style: double;
+ border-radius: 50px;
+ border-color: #ccc6c6;
+}
+.tem{
+  background-color: #ffffff;
+  margin: 1rem;
+}
+.app{
+  margin-top: 1rem;
+  margin-right: 9rem;
+}  
+#skills{
+margin-left: 9rem;
+}
+
+.tem :hover{
+  transform: scale(1.1)
+}
